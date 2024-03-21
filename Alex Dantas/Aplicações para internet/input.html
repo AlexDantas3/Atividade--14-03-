@@ -14,6 +14,8 @@
 
     <h2>Tutoriais para iniciantes</h2>
     </header>
+
+    </form>
     
     <section>
 
@@ -86,7 +88,38 @@
                 <li>SMTP</li>
                 <li>IMAP</li>
             </ol>
-</section>
+    </section>
+    <section>
+        <form method="post" action="obrigado.html">
+            <label>Nome:</label>
+            <input type="text" name="nome" required> <!-- Elemento input (texto)-->
+
+            <label>Idade:</label>
+            <input type="number" name="numero" required>
+            
+            <label>E-mail:</label>
+            <input type="email" name="email" required>
+            
+            <label>Senha:</label>
+            <input type="password" name="senha" required>
+
+            <label>Assunto:</label>
+            <select name="assunto">
+                <option value="Sugestão">Sugestão</option>
+                <option value="Reclamação">Reclamação</option>
+                <option value="Elogio" selected>Elogio</option>
+            </select>
+
+            <label>Mensagem:</label>
+            <textarea name="mensagem"></textarea>
+            <br>
+            <label>Concordo com os termos de privacidade do site</label>
+            <input type="checkbox" name="termo" value="aceito" required>
+
+            <input type="submit" value="Enviar">
+            <button type="reset">Apagar</button>
+        </form>
+    </section>
     </div>
     </body>
 </html>
