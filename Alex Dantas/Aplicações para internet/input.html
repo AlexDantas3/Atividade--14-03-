@@ -6,11 +6,17 @@
         <title>Quinta-Feira</title>
         <link rel="stylesheet" href="style.css">
         <style>
+            body{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
             header{
-                background-color: blue; 
-                color: white;
+                background-color: rgb(0, 170, 255); 
+                color: black;
                 text-align: center;
-                padding: 20px;
+                padding: 50px;
+                font-size: 22px;
             }
             .estilo1{
                 font-size: 16px;
@@ -20,9 +26,12 @@
             .tabela{
                 background-color: rgb(0, 170, 255);
                 width: 50%;
+                padding: 25px;
             }
             .lista{
-                background-color: rgb(8, 8, 118);
+                padding: 10px;
+                color: white;
+                background-color: blue;
                 width: 50%;
 
             }
@@ -49,7 +58,9 @@
                 padding: 20px;
             }
             .form{
+                width: 50%;
                 padding: 20px;
+                margin-left: 25%;
 
             }
             .form input, textarea, select{
@@ -57,27 +68,59 @@
                 background-color: white;
 
             }
-            footer{
-                background-color: gray;
-                text-align: center;
-            }
             footer ul{
                 text-align: left;
             }
             .menu{
+                background-color: rgb(0, 170, 255);
+                padding: 15px;
                 display: flex;
                 list-style: none;
                 justify-content: space-between;
             }
             .menu a:hover{
-                background-color: blue;
-                color: white;
                 font-size: 20px;
             }
             .menu a:active{
-                background-color: yellow;
-                color: black;
                 font-size: 30px;
+            }
+            .menu a:any-link{
+                color: white;
+            }
+            .paragrafo1{
+                display: flex;
+            }
+            .rodape{
+                justify-content: space-between;
+                text-align: center;
+                display: flex;
+                list-style: none;
+                padding: 0px;
+            }
+            .sobre{
+                text-align: left;
+                background-color: lightgray;
+                width: 25%;
+            }
+            .referencias{
+                text-align: left;
+                background-color: white;
+                width: 25%;
+            }
+            .tutoriais{
+                text-align: left;
+                background-color: lightgray;
+                width: 25%;
+            }
+            .outroslinks{
+                text-align: left;
+                background-color: white;
+                width: 25%;
+            }
+            .final{
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+
             }
         </style>
     </head>
@@ -102,10 +145,16 @@
         </form>
         
         <section class="estilo1" id="html">
+            <section class="paragrafo1">  
 
-        <p><strong><ins>HTML</ins></strong><em>(Linguagem de Marcação de Hipertexto)</em> é o bloco de construção mais básico da web. <mark>Define o significado e a estrutura do conteúdo da web.</mark> Outras tecnologias além do HTML geralmente são usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento <em>(JavaScript)</em> de uma página web.</p>
+                <img src="https://cdn0.iconfinder.com/data/icons/social-network-7/50/22-1024.png" title="HTML" width="120px" height="115px">
+
+                <p><strong><ins>HTML</ins></strong><em>(Linguagem de Marcação de Hipertexto)</em> é o bloco de construção mais básico da web. <mark>Define o significado e a estrutura do conteúdo da web.</mark> Outras tecnologias além do HTML geralmente são usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento <em>(JavaScript)</em> de uma página web.</p>
         
-        <img src="https://cdn0.iconfinder.com/data/icons/social-network-7/50/22-1024.png" title="HTML" width="120px" height="115px">
+            </section>
+        <h1>Qual a função do HTML?</h1>
+        <p>A função do HTML (Hypertext Markup Language) na programação web sofreu alterações ao longo dos anos e hoje essa linguagem deve ser utilizada unicamente para estruturar o conteúdo das páginas. Ou seja, não cabe a ela definir características visuais ou comportamentos, pois isso deve ser feito usando CSS e JavaScript.</p>
+
         </section>
         <section class="duas-colunas" id="tabela">
             <section class="tabela">
@@ -138,7 +187,7 @@
                         <td>Define a área de configuração de um documento HTML</td>
                     </tr>
                     <tr>
-                        <td>h1...h6</td>
+                        <td>h1...h6 </td>
                         <td>Adiciona os subtítulos do site</td>
                     </tr>
                     <tr>
@@ -154,38 +203,40 @@
                         <td>Elemento que divide e organiza conteúdos dentro de um doc HTML</td>
                     </tr>
                 </tbody>
-                <tfoot>
-                    <td colspan="2">Referência: Internet.com </td>
-                </tfoot>
             </table>
             </section>
             <!-- Lista Ordenada = OL -->
             <section class="lista">
+                <h2>Top 5 protocolos</h2>
                 <ol>
-                    <li>HTTP</li>
-                        <ul>
-                            <li>Hyper Transfer Protocol</il>
-                            <li>Protocolo que transfere informações...</li>
-                        </ul>
-                    <li>FTP</li>
-                    <li>POP</li>
-                    <li>SMTP</li>
-                    <li>IMAP</li>
+                    <li>HTTP - HyperText Transfer Protocol</li>
+                    <li>FTP - File Transfer Protocol</li>
+                    <li>POP - Post Office Protocol</li>
+                    <li>SMTP - Simples Mail Transfer Protocol</li>
+                    <li>IMAP - Internet Messaging Access Protocol</li>
                 </ol>
+
+                <ul>
+                    <li>HTTP - HyperText Transfer Protocol</li>
+                    <li>FTP - File Transfer Protocol</li>
+                    <li>POP - Post Office Protocol</li>
+                    <li>SMTP - Simples Mail Transfer Protocol</li>
+                    <li>IMAP - Internet Messaging Access Protocol</li>
+                </ul>
             </section>
         </section>
         <section class="tres-colunas" id="trescolunas">
             <section class="estilo-html">
                 <h2>HTML</h2>
-                <p>Sobre HTML...</p>
+                <p>HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML. HyTime é um padrão para a representação estruturada de hipermídia e conteúdo baseado em tempo.</p>
             </section>
             <section class="estilo-css">
                 <h2>CSS</h2>
-                <p>Sobre css...</p>
+                <p>Cascading Style Sheets é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML ou ficar contido dentro das tags style Também é possível, adicionar estilos adicionando um  para um arquivo CSS que contém os estilos. </p>
             </section>
             <section class="estilo-js">
                 <h2>JavaScript</h2>
-                <p>Sobre JavsScript...</p>
+                <p>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.</p>
             </section>
         </section>
         <section class="form" id="formulario">
@@ -222,9 +273,9 @@
         </section>
         </div>
         <footer id="links">
-            <section>
-                <section>
-                    Links úteis
+            <section class="rodape">
+                <section class="sobre">
+                    <h3>Sobre</h3>
                     <ul>
                         <li><a href="#topo">Voltar ao topo</a></li>
                         <li><a href="#html">Sobre HTML</a></li>
@@ -232,8 +283,35 @@
                         <li><a href="#trescolunas">HTML, CSS e JS</a></li>
                     </ul>
                 </section>
+                <section class="referencias">
+                    <h3>Referências</h3>
+                    <ul>
+                        <li><a href="https://www.w3schools.com">W3school</a></li>
+                        <li><a href="https://www.youtube.com">YouTube</a></li>
+                        <li><a href="https://www.alura.com.br/">Alura</a></li>
+                    </ul>
+                </section>
+                <section class="tutoriais">
+                    <h3>Tutoriais</h3>
+                    <ul>
+                        <li>Design</li>
+                        <li>Marketing</li>
+                        <li>Programação</li>
+                        <li>Tutoriais</li>
+                    </ul>
+                </section>
+                <section class="outroslinks">
+                    <h3>Outros links</h3>
+                    <ul>
+                        <li><a href="https://www.unipe.edu.br/aluno/">Unipê</a></li>
+                        <li><a href="https://www.google.com">Google</a></li>
+                        <li><a href="https://www.amazon.com.br">Amazon</a></li>
+                    </ul>
+                </section>
             </section>
-            <p>Direitos Reservador - Autor: Alex Dantas</p>
+            <section class="final">
+                <p>AlexDantas © Direitos Reservados</p>
+            </section>
         </footer>
     </body>
 </html>
