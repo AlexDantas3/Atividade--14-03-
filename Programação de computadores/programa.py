@@ -21,10 +21,27 @@ while populacaoa < populacaob:
     anos = anos + 1
 print ('Anos necessários para A ultrapassar B: ', anos)
 '''
-
+'''
 fatorial = int(input("Informe um número: "))
 resultado = 1
 while (fatorial > 1):
     resultado *= fatorial
     fatorial -= 1
     print(resultado)
+'''
+
+'''
+numeros = [3,1, 7, 9, 4]
+numero_max = max(numeros)
+print ('O maior número é: ', numero_max)
+'''
+
+'''
+numeros = [3, 1, 7, 9, 4]
+maximo = 0
+
+for numero in numeros:
+    if numero > maximo:
+        maximo = numero
+print (maximo)
+'''
