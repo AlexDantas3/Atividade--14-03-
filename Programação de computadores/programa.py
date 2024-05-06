@@ -45,3 +45,76 @@ for numero in numeros:
         maximo = numero
 print (maximo)
 '''
+
+'''
+qntPessoasOpiniaoExcelente = 0
+qntPessoasOpiniaoRuim = 0
+qntPessoasOpiniaoBom = 0
+qntPessoas = 3
+somaIdades = 0
+maiorIdade = 0
+
+for i in range (3):
+    idade = int(input("Informe sua idade: "))
+    opiniao = int(input("Informe sua opinião (1 - 4): "))
+    if(idade > maiorIdade):
+        maiorIdade = idade
+
+    if (opiniao == 3):
+        somaIdades += idade
+        qntPessoasOpiniaoBom += 1
+
+    if (opiniao == 1 or opiniao == 2):
+        qntPessoasOpiniaoRuim += 1
+
+    if(opiniao == 4 and idade > 30):
+        qntPessoasOpiniaoExcelente += 1
+
+print ('Média da idade opinião 3:  ', somaIdades/qntPessoasOpiniaoBom)
+print ('Quantidade de pessoas com opinião ruim ou regular: ', qntPessoasOpiniaoRuim)
+print ('Quantidade de pessoas com opinião excelente: ', qntPessoasOpiniaoExcelente)
+print ('Maior idade: ', maiorIdade)
+'''
+
+'''
+qntPessoas = 3
+somaValores = 0
+qntItem1827 = 0
+maiorValor = 0
+anoItemValioso = 0
+for i in range (qntPessoas):
+    valor = float(input('Digite um valor: '))
+    ano = int(input('Informe o ano: '))
+    if(valor > maiorValor):
+        maiorValor = valor
+        anoItemValioso = ano
+    somaValores += valor
+
+    if(ano < 1827):
+        qntItem1827 += 1
+
+print('Quantidade de itens produzidos antes de 1827: ', qntItem1827)
+print('Valor médio: ', somaValores/qntPessoas)
+print('Ano do item mais valioso: ', anoItemValioso)
+'''
+
+'''
+numerador = int(input('Digite um número: '))
+for i in range (11):
+    print('{} x {} = {:2}'.format(numerador, i, numerador*i))
+'''
+
+'''
+linhas = int(input('Quantidade de linhas: '))
+colunas = int(input('Quantidade de colunas: '))
+
+for i in range(linhas):
+    print("#" * colunas)
+'''
+
+'''
+for h in range(24):
+    for m in range(60):
+        for s in range(60)
+        print(h, m, s, sep = ":")
+'''
