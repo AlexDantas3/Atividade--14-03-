@@ -138,3 +138,23 @@ if (n3 in lista):
 else:
     print('Se lascou!')
 '''
+
+'''
+lista = ['Homem de Ferro', 'Capitão América', 'Thor', 'Hulk']
+print(lista)
+lista.append('Homem-Arannha')
+
+if ('Homem de Ferro', 'Thor' in lista):
+    print('Estão na lista')
+lista.remove('Homem de Ferro')
+print(lista)
+'''
+
+'''
+lista = []
+for i in range(7):
+    n1 = int(input('Digite os números inteiros: '))
+    lista.append(n1)
+lista.reverse()
+print(lista)
+'''
