@@ -6,6 +6,7 @@ while (numero > 10 or numero < 0):
 else:
     print("Número válido: ", numero)
 '''
+
 '''
 populacaoa = 80000
 taxaa = 0.03
@@ -21,6 +22,7 @@ while populacaoa < populacaob:
     anos = anos + 1
 print ('Anos necessários para A ultrapassar B: ', anos)
 '''
+
 '''
 fatorial = int(input("Informe um número: "))
 resultado = 1
@@ -117,4 +119,22 @@ for h in range(24):
     for m in range(60):
         for s in range(60)
         print(h, m, s, sep = ":")
+'''
+
+'''
+n1 = int(input('Digite um número: '))
+lista = []
+
+for i in range(n1):
+    n2 = int(input('Digite um número: '))
+    if n2 >= 0:
+        lista.append(n2)
+    else:
+        break
+
+n3 = int(input('Digite o seu número: '))
+if (n3 in lista):
+    print('Número encontrado!')
+else:
+    print('Se lascou!')
 '''
